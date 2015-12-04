@@ -8,7 +8,7 @@ This documentation will supply you with a complete walk-through, and part list, 
 
 First, lets talk about the items you'll need.
 
-At the time being, the cheap option via Amazon was to buy Canakit's " Raspberry Pi 2 Ultimate Starter kit (clear case) bundle. This may not be the case anymore.
+At the time being, the cheap option via Amazon was to buy Canakit's "Raspberry Pi 2 Ultimate Starter kit (clear case)" bundle. This may not be the case anymore.
 
 For your project you'll need the following items:
   
