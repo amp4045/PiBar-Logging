@@ -24,6 +24,8 @@ For your project you'll need the following items:
   
 Gather those items, and you'll be set!  
 
+### Diving into the code
+
 This project is very simple, and only requires two small scripts, one in python, and one in bash, both of which you'll write the code on the Raspberry Pi itself. Before we dive into the code, you'll need to hook up your Raspberry Pi.  There are two main methods of working on your Pi, SSH'ing (Secure Shell) into your Pi from your main PC, and working from the command line.  This path is slightly more difficult, and will not be covered in this guide.  I chose the "old-fashioned" method, externalling hooking up a mouse, keyboard, and monitor(HDMI) to the device.  It's like having the hard copy of a good book, compared to reading it on a tablet.
 
 
