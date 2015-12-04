@@ -43,12 +43,12 @@ import os
 global idNumber
 idNumber = raw_imput(' ')
 
-while idNumber != 777777777:
-	if idNUmber == 'terminate' 
-		os.system('Shutdown now -h')
-	appendFile = open('/media/usbName', 'a')  
-	appendFile.write(str(idNumber) + str(' ') + str(now) + '\n')
-	appendFile.close()
-	idNumber = raw_input(' ')
+* while idNumber != 777777777:
+* 	if idNUmber == 'terminate' 
+* 		os.system('Shutdown now -h')
+* 	appendFile = open('/media/usbName', 'a')  
+* 	appendFile.write(str(idNumber) + str(' ') + str(now) + '\n')
+* 	appendFile.close()
+* 	idNumber = raw_input(' ')
 
 
