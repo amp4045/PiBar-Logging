@@ -31,6 +31,24 @@ This project is very simple, and only requires two small scripts, one in python,
 
 Review the two files listed in this repository, they will be direct access to working code, but I highly suggest you type the code yourselves, so you understand what you're doing, and what I'll be talking about.
 
-Let's open the **Scanner.py** file, .py standing for python.
+Let's open the **Scanner.py** file, ".py" standing for python.  
+
+This small script will run continuously, until it meets one of the two conditions are met, idNumber equalling the integer 777777777, which in my scenario would never happen, or idNumber equalling the string "terminate".
+
+
+from datetime import datetime
+now = datetime.now(); 
+import os 
+
+global idNumber
+idNumber = raw_imput(' ')
+
+while idNumber != 777777777:
+	if idNUmber == 'terminate' 
+		os.system('Shutdown now -h')
+	appendFile = open('/media/usbName', 'a')  
+	appendFile.write(str(idNumber) + str(' ') + str(now) + '\n')
+	appendFile.close()
+	idNumber = raw_input(' ')
 
 
