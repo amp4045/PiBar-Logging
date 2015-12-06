@@ -56,3 +56,13 @@ idNumber = raw_imput(' ')
 * 	idNumber = raw_input(' ')
 
 **Another important thing to note...you will HAVE to substitude YOUR usbName.  This will ONLY work for the one Usb, using this configuration**
+
+If you want to use multiple USB's you could create something that finds the USB name, and passes it in as an argument...but that wasn't necessary for this project.
+
+#### Going over "Launcher.sh"
+
+
+
+>#!/bin/sh\
+>sudo mount -t vfat -ouid=1000 -ogid=1000 /dev/sda1/media/usbName\
+Sudo python /home/pi/Scanner.py 
