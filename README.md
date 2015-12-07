@@ -39,7 +39,7 @@ This small script will run continuously, until it meets one of the two condition
 
 **PLEASE PAY ATTENTION THE INDENTATIONS ON THE Scanner.py FILE!! THEY ARE EXTREMELY IMPORTANT IN THE LANGUAGE**
 
-
+```
 > from datetime import datetime
 
 > now = datetime.now(); 
@@ -54,7 +54,7 @@ This small script will run continuously, until it meets one of the two condition
 
 >   if idNUmber == 'terminate' 
 
->   os.system('Shutdown now -h')
+>     os.system('Shutdown now -h')
 
 > 	appendFile = open**('/media/usbName', 'a')**  
 
@@ -63,7 +63,7 @@ This small script will run continuously, until it meets one of the two condition
 > 	appendFile.close()
 
 > 	idNumber = raw_input(' ')
-
+```
 **Another important thing to note...you will HAVE to substitude YOUR usbName.  This will ONLY work for the one Usb, using this configuration**
 
 If you want to use multiple USB's you could create something that finds the USB name, and passes it in as an argument...but that wasn't necessary for this project.
