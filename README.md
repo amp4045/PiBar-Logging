@@ -94,3 +94,8 @@ You now have fully operational code.  Well done! That wasn't so hard, was it?  A
 
 Hazzah! If you recall, if the string value "terminate" is scanned, the line of code "os.system('Shutdown now -h')" will execute.  This is great as it will safely end our code, and shut down the pi. You may ask yourself, where will I get a barcode that says terminate...?  Simply answered, make one!  There are many free barcode generators, where you can pretty much create a barcode holding any value.  I used [BARCODESINC](https://www.barcodesinc.com/generator/index.php) to create my barcode.  After creating the barcode, I printed out as many copies as I had raspberry pi's, cut off all the white space, and taped it to the top of the plastic casing holding my Pi.
 
+Well, that wraps it up.  You should now have a fully functional self-logging barcode scanner.  Operate your device by plugging in the barcode scanner, WiFi dongle, USB drive, and lastly, the power source.  Give your Rasp. Pi about 45-60 seconds to start up (as it is still a computer) and scan away!  When you're done scanning barcodes, scan the "terminate" barcode you fastened to the top of your case, and allow the device to shut down.  Once shut down, take out the flashdrive, insert it into a USB port of your workstation, and open the file in the application of your choice!
+
+#### Closing
+
+Thank you for reading my guide, this was a fun project, in which I've learned a lot about Raspberry Pi file systems, and how they function via command line.
