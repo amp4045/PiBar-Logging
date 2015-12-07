@@ -40,29 +40,20 @@ This small script will run continuously, until it meets one of the two condition
 **PLEASE PAY ATTENTION THE INDENTATIONS ON THE Scanner.py FILE!! THEY ARE EXTREMELY IMPORTANT IN THE LANGUAGE**
 
 ```
-> from datetime import datetime
+ from datetime import datetime
+ now = datetime.now(); 
+ 
+ import os 
+ global idNumber
 
-> now = datetime.now(); 
-
-> import os 
-
-> global idNumber
-
-> idNumber = raw_imput(' ')
-
-> while idNumber != 777777777:
-
->   if idNUmber == 'terminate' 
-
->     os.system('Shutdown now -h')
-
-> 	appendFile = open**('/media/usbName', 'a')**  
-
-> 	appendFile.write(str(idNumber) + str(' ') + str(now) + '\n')
-
-> 	appendFile.close()
-
-> 	idNumber = raw_input(' ')
+idNumber = raw_imput(' ')
+while idNumber != 777777777:
+  if idNUmber == 'terminate' 
+    os.system('Shutdown now -h')
+  appendFile = open**('/media/usbName', 'a')**  
+  appendFile.write(str(idNumber) + str(' ') + str(now) + '\n')
+  appendFile.close()
+  idNumber = raw_input(' ')
 ```
 **Another important thing to note...you will HAVE to substitude YOUR usbName.  This will ONLY work for the one Usb, using this configuration**
 
