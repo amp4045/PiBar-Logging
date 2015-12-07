@@ -42,11 +42,11 @@ This small script will run continuously, until it meets one of the two condition
 ```
  from datetime import datetime
  now = datetime.now(); 
- 
  import os 
- global idNumber
-
+ 
+global idNumber
 idNumber = raw_imput(' ')
+
 while idNumber != 777777777:
   if idNUmber == 'terminate' 
     os.system('Shutdown now -h')
@@ -60,12 +60,13 @@ while idNumber != 777777777:
 If you want to use multiple USB's you could create something that finds the USB name, and passes it in as an argument...but that wasn't necessary for this project.
 
 #### Going Over "Launcher.sh"
+```
+#!/bin/sh
 
->`#!/bin/sh`
+sudo mount -t vfat -ouid=1000 -ogid=1000 /dev/sda1/media/usbName
 
->sudo mount -t vfat -ouid=1000 -ogid=1000 /dev/sda1/media/usbName
-
->sudo python /home/pi/Scanner.py 
+sudo python /home/pi/Scanner.py 
+```
 **NOTE**  If you saved these files in another location, you'll need to use the appropriate path name
 
 This is a very small, effective script!  When this script executes, and we will get to how it executes in a moment, it will simply mount your flashdrive under "/dev/sda1/media/**usbName**", and start your python code.  Now "Launcher" makes a little more sense, huh?
@@ -78,12 +79,13 @@ In my scenario, the Raspberry Pi will be used without any peripherals: keyboard,
 What a beautiful file.  rc.local is a file under the "/etc/" directory, that runs when the Pi boots up, more specifically, before user information is asked (this saves us the trouble of requiring a password bypass - easy to do, just more work).
 
 rc.local is where you'll put a single line of code that will execute our launching script. To do this, open your terminal, and type
-
->sudo nano /etc/rc.local
-
+```
+sudo nano /etc/rc.local
+```
 this will open the rc.local file in an editor called nano, if you're familiar and more comfortable with other ediors, like VI, use them! Add commands below the comment, but leave the line exit 0 at the end, then save the file and exit.  Lets call the launching script now, by adding this line under the "fi":
-
->sh /home/pi/launcher.sh
+```
+sh /home/pi/launcher.sh
+```
 **NOTE**  If you saved these files in another location, you'll need to use the appropriate path name
 
 ####Adding Finishing Touches
