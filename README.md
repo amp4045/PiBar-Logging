@@ -54,7 +54,7 @@ This small script will run continuously, until it meets one of the two condition
 
 >   if idNUmber == 'terminate' 
 
->     os.system('Shutdown now -h')
+>   os.system('Shutdown now -h')
 
 > 	appendFile = open**('/media/usbName', 'a')**  
 
