@@ -51,7 +51,6 @@ This small script will run continuously, until it meets one of the two condition
 > idNumber = raw_imput(' ')
 
 > while idNumber != 777777777:
-
 >   if idNUmber == 'terminate' 
 
 >   os.system('Shutdown now -h')
